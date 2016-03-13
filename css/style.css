@@ -87,9 +87,9 @@ a {
   font-size: "200%";
 }
 
-.carousel{margin-bottom:60px; margin: -20px 0;}
+.carousel{}
 .carousel .container{position:relative;z-index:9;}
-.carousel .item{height:678px;}
+.carousel .item{height:600px}
 .carousel-caption{position:static;padding:0 20px;margin-top:10%;text-align:left; }
 
 .content-section {
@@ -127,7 +127,7 @@ a {
 #location{
   width: 100%;
   padding:5%;
-  background: url("../img/background/location.jpg") no-repeat center center fixed;
+  background: url("../img/background/location.jpg") no-repeat center center;
   -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -148,6 +148,21 @@ a {
   }
 .carousel-caption{background-color:transparent;position:static;max-width:550px;padding:0 20px;margin-top:65%;text-align:left; }
 .carousel .item{height:568px;}
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+}
+
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
 }
 
 #footer {
